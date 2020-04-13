@@ -1,3 +1,4 @@
+
 def maxi(*l):
     if len(l) == 0:
         return 0
@@ -7,8 +8,6 @@ def maxi(*l):
             m = l[ix]
             
     return m
-
-
 
 def mini(*l):
     if len(l) == 0:
@@ -30,8 +29,22 @@ def media(*l):
         suma += valor
             
     return suma / len(l)
+  
+ 
+funciones = {
+    'max': maxi,
+    'min': mini,
+    'med': media
+    } 
+  
+#función de 1r nivel que nos devuelve la función que nombramos  
+def returnf(nombre):
+    nombre = nombre.lower()
+    if nombre in funciones.keys():
+        return funciones[nombre]
     
-    
+    return None
+
     
     
     
