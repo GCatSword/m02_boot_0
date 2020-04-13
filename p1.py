@@ -4,7 +4,6 @@ def sumaTodos(limitTo):
             resultado +=1
     return resultado
 
-print(sumaTodos(100))
 
 
 
